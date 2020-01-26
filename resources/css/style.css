@@ -24,6 +24,18 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /* ------------------------------------------------------ */
 /* REUSABLE COMPONENTS 
 /* ------------------------------------------------------ */
@@ -193,4 +205,98 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+
+/* ------------------------------------------------------ */
+/* FEATURES
+/* ------------------------------------------------------ */
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+/* ------------------------------------------------------ */
+/* MEALS
+/* ------------------------------------------------------ */
+
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  transform: scale(1.2);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ------------------------------------------------------ */
+/* HOW IT WORKS
+/* ------------------------------------------------------ */
+
+.section-steps {
+  background-color: #f5f5f5;
+}
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.work-step {
+  margin-bottom: 50px;
+}
+
+.work-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.work-step div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  border-radius: 50%;
+  display: inline-block;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 7px;
+  float: left;
+  font-size: 150%;
+  margin-right: 20px;
+}
+
+.btn-app img {
+  height: 50px;
+  margin-right: 20px;
 }
