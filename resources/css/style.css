@@ -300,3 +300,16 @@ header {
   height: 50px;
   margin-right: 20px;
 }
+
+/* ------------------------------------------------------ */
+/* CITIES
+/* ------------------------------------------------------ */
+
+.cities-photo {
+  width: 100%;
+
+  width: 80%;
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
