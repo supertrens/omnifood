@@ -112,6 +112,10 @@ h3 {
   margin-bottom: 10px;
 }
 
+.icon-white {
+  color: white;
+}
+
 .icon-small {
   display: inline-block;
   width: 30px;
@@ -190,6 +194,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -350,17 +355,40 @@ header {
 /* ------------------------------------------------------ */
 
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(img/back-customers.jpg);
   background-size: cover;
   background-position: center;
-  height: 500px;
-  color: rgb(231, 208, 208);
+  background-attachment: fixed;
+  color: #fff;
 }
-.profile {
-  display: inline-block;
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 120%;
+  position: relative;
+  margin-top: 40px;
+}
+
+blockquote:before {
+  content: "\201C";
+  font-size: 400%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+cite {
   font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+
+cite img {
+  height: 45px;
   border-radius: 50%;
-  width: 10%;
+  margin-right: 10px;
   vertical-align: middle;
 }
