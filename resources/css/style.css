@@ -344,3 +344,23 @@ header {
   overflow: hidden;
   background: #000;
 }
+
+/* ------------------------------------------------------ */
+/* TESTIMONIALS
+/* ------------------------------------------------------ */
+
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(img/back-customers.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: rgb(231, 208, 208);
+}
+.profile {
+  display: inline-block;
+  font-size: 90%;
+  border-radius: 50%;
+  width: 10%;
+  vertical-align: middle;
+}
