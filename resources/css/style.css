@@ -16,12 +16,14 @@ Orange Color : #e67e22
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   color: #555555;
   font-family: "Lato", "Arial" sans-serif;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {
@@ -65,8 +67,8 @@ h1 {
   margin-top: 0;
   margin-bottom: 20px;
   color: white;
-  font-size: 200%;
-  word-spacing: 3px;
+  font-size: 240%;
+  word-spacing: 4px;
   letter-spacing: 1px;
 }
 
@@ -82,7 +84,7 @@ h2:after {
   display: block;
   height: 2px;
   background-color: #e67e22;
-  content: "";
+  content: " ";
   width: 100px;
   margin: 0 auto;
   margin-top: 30px;
@@ -106,14 +108,10 @@ h3 {
 
 /* -------- ICONS -------- */
 .icon-big {
-  font-size: 200%;
+  font-size: 350%;
   display: block;
   color: #e67e22;
   margin-bottom: 10px;
-}
-
-.icon-white {
-  color: white;
 }
 
 .icon-small {
@@ -220,7 +218,7 @@ header {
 .main-nav {
   float: right;
   list-style: none;
-  margin-top: 50px;
+  margin-top: 55px;
 }
 
 .main-nav li {
@@ -297,13 +295,18 @@ header {
 .section-steps {
   background-color: #f5f5f5;
 }
-.steps-box:first-child {
-  text-align: right;
-  padding-right: 3%;
+
+.steps-box {
   margin-top: 30px;
 }
 
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+
 .steps-box:last-child {
+  text-align: left;
   padding-left: 3%;
   margin-top: 70px;
 }
@@ -348,11 +351,14 @@ header {
 /* CITIES
 /* ------------------------------------------------------ */
 
-.cities-photo {
-  width: 80%;
+.box img {
+  width: 100%;
+  height: auto;
   margin-bottom: 15px;
-  overflow: hidden;
-  background: #000;
+}
+
+.city-feature {
+  margin-bottom: 5px;
 }
 
 /* ------------------------------------------------------ */
