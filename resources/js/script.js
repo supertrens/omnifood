@@ -56,6 +56,7 @@ $(document).ready(function() {
     });
   });
 
+  // Animation on scroll
   $(".js--wp-1").waypoint(
     function(direction) {
       $(".js--wp-1").addClass("animated fadeIn");
@@ -84,5 +85,14 @@ $(document).ready(function() {
     { offset: "50%" }
   );
 
-  // Animation on scroll
+  // Mobile navigation
+  $(".js--nav-icon").click(function() {
+    let nav = $(".js--main-nav");
+    let icon = $(".js--nav-icon ion-icon");
+
+    nav.slideToggle(200);
+    icon.attr("name", function(index, currentValue) {
+      return currentValue === "menu" ? "close" : "menu";
+    });
+  });
 });
